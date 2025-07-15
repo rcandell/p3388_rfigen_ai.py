@@ -1,3 +1,14 @@
+"""jspec_csvtosjon.py: Convert csv FFT specs to JSON specs."""
+
+__author__ = "Richard Candell"
+__copyright__ = "Copyright 2025, Richard Candell"
+__credits__ = ["Rick Candell"]
+__license__ = "MIT"
+__version__ = "1.0.1"
+__maintainer__ = "Rick Candell"
+__email__ = "rick dot candell at gmail dot com"
+__status__ = "Research"
+
 import json
 import pandas as pd
 
