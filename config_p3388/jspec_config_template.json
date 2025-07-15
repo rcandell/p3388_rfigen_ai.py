@@ -1,6 +1,6 @@
 {
   "spectrogram": {
-    "Duration_s": 10.0,
+    "Duration_s": 1.0,
     "NFreqBins": 1025,
 	"WindowSize_s": 0.001,
 	"NoiseFloorPower_dB": -200,

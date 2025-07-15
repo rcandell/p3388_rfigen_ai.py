@@ -32,7 +32,7 @@ T = pd.read_excel(manifest_path, na_values=['NA'], keep_default_na=False)
 Tst = T.to_dict('records')  # Convert DataFrame to list of dictionaries (equivalent to table2struct)
 
 # Operations
-SPECTGOP = False  # Equivalent to MATLAB's SPECTGOP = 1
+SPECTGOP = True  # Equivalent to MATLAB's SPECTGOP = 1
 TIMESERIESOP = True  # Equivalent to MATLAB's TIMESERIESOP = 0
 
 # Loop through the manifest

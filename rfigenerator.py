@@ -96,7 +96,7 @@ class RFIGenerator:
                 mode = 'a' if not first_write else 'w'
                 pd.DataFrame(Z).to_csv(ofile_name, mode=mode, header=False, index=False)
                 first_write = False
-                if True:
+                if False:
                     t = np.linspace(0, Tchunk.tau, int(Tchunk.N * Tchunk.U * Tchunk.M))
                     plt.figure()
                     plt.subplot(2, 1, 1)

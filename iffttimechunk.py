@@ -171,17 +171,18 @@ class IFFTTimeChunk:
             Y1s = np.fft.fftshift(np.abs(np.fft.fft(self.X, L0)))
             f = np.linspace(-self.fs / 2, self.fs / 2, L0) / 1e6
 
-            plt.figure()
-            plt.subplot(3, 1, 1)
-            plt.stem(f0, Y0)
-            plt.title('Original two-sided FFT')
-            plt.subplot(3, 1, 2)
-            plt.stem(f1, Y1)
-            plt.title('FFT of new expanded time series')
-            plt.subplot(3, 1, 3)
-            plt.stem(f, Y1s)
-            plt.title('FFT of new time series, original length')
-            plt.show()
+            if False:
+                plt.figure()
+                plt.subplot(3, 1, 1)
+                plt.stem(f0, Y0)
+                plt.title('Original two-sided FFT')
+                plt.subplot(3, 1, 2)
+                plt.stem(f1, Y1)
+                plt.title('FFT of new expanded time series')
+                plt.subplot(3, 1, 3)
+                plt.stem(f, Y1s)
+                plt.title('FFT of new time series, original length')
+                plt.show()
 
     def ifft(self, YdB):
         """
@@ -249,18 +250,19 @@ class IFFTTimeChunk:
             t = np.linspace(0, self.tau, len(self.X))
             f = np.linspace(-self.fs / 2, self.fs / 2, len(self.X)) / 1e6
 
-            plt.figure()
-            plt.subplot(4, 1, 1)
-            plt.plot(t, self.X.real)
-            plt.title('Time series output real')
-            plt.subplot(4, 1, 2)
-            plt.plot(t, self.X.imag)
-            plt.title('Time series output imag')
-            plt.subplot(4, 1, 3)
-            plt.stem(f, np.fft.fftshift(np.abs(np.fft.fft(self.X))))
-            plt.title('FFT of new time series')
-            plt.subplot(4, 1, 4)
-            plt.stem(f, Y0)
-            plt.title('Original two-sided FFT')
-            plt.show()
+            if False:
+                plt.figure()
+                plt.subplot(4, 1, 1)
+                plt.plot(t, self.X.real)
+                plt.title('Time series output real')
+                plt.subplot(4, 1, 2)
+                plt.plot(t, self.X.imag)
+                plt.title('Time series output imag')
+                plt.subplot(4, 1, 3)
+                plt.stem(f, np.fft.fftshift(np.abs(np.fft.fft(self.X))))
+                plt.title('FFT of new time series')
+                plt.subplot(4, 1, 4)
+                plt.stem(f, Y0)
+                plt.title('Original two-sided FFT')
+                plt.show()
             

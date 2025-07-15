@@ -68,3 +68,6 @@ for ii in range(1025 * 4 + 1):
 
     plt.tight_layout()
     plt.show()
+    plt.close()
+
+print("Done.")
